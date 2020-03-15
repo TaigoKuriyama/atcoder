@@ -108,9 +108,10 @@ abc153/
 
 ```
 
+coding and testing
 ```sh
-$ touch a.py
-$ vim a.py
+$ touch main.py
+$ vim main.py
 $ oj t -c "python3 a.py" -d ./tests/
 [*] 3 cases found
 time: illegal option -- f
@@ -133,7 +134,49 @@ usage: time [-lp] command.
 [+] test success: 3 cases
 ```
 
+submit
+```sh
+$ oj s https://atcoder.jp/contests/abc153/tasks/abc153_a main.py 
+[x] read history from: /Users/taigokuriyama/Library/Caches/online-judge-tools/download-history.jsonl
+[x] found urls in history:
+
+[x] problem recognized: AtCoderProblem.from_url('https://atcoder.jp/contests/abc153/tasks/abc153_a'): https://atcoder.jp/contests/abc153/tasks/abc153_a
+[*] code (89 byte):
+#!/usr/bin/env python3
+import math
+H, A = map(int, input().split())
+print(math.ceil(H/A))
+[x] load cookie from: /Users/taigokuriyama/Library/Application Support/online-judge-tools/cookie.jar
+[x] GET: https://atcoder.jp/contests/abc153/tasks/abc153_a
+[x] 200 OK
+[x] PyPy is available for Python interpreter
+[x] both Python2 and Python3 are available for version of Python
+[x] use: 3
+[*] chosen language: 3023 (Python3 (3.4.3))
+[!] the problem "https://atcoder.jp/contests/abc153/tasks/abc153_a" is specified to submit, but no samples were downloaded in this directory. this may be mis-operation
+[x] sleep(3.00)
+Are you sure? Please type "abca" abca
+[x] GET: https://atcoder.jp/contests/abc153/tasks/abc153_a
+[x] 200 OK
+[x] GET: https://atcoder.jp/contests/abc153/submit
+[x] 200 OK
+[x] POST: https://atcoder.jp/contests/abc153/submit
+[x] redirected: https://atcoder.jp/contests/abc153/submissions/me
+[x] 200 OK
+[+] success: result: https://atcoder.jp/contests/abc153/submissions/10924026
+[x] open the submission page with browser
+[x] save cookie to: /Users/taigokuriyama/Library/Application Support/online-judge-tools/cookie.jar
+```
+
+Settings
+```sh
+# 全部の問題ディレクトリが作られるようにする
+$ acc config default-task-choice all
+default-task-choice = all
+```
 ## Link
 - [AtCoder](https://atcoder.jp/)
 - [AtCoder Problems](https://kenkoooo.com/atcoder/#/table/taigok)
 - [online-judge-tools](https://github.com/kmyk/online-judge-tools)
+- [atcoder-cli](https://github.com/Tatamo/atcoder-cli)
+   - [コマンドラインツールatcoder-cliを公開しました](http://tatamo.81.la/blog/2018/12/07/atcoder-cli/)
