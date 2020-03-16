@@ -47,53 +47,50 @@ Password:
 [*] You have already signed in.
 [x] save cookie to: /Users/taigokuriyama/Library/Application Support/online-judge-tools/cookie.jar
 ```
+## Settings
+```sh
+# 全部の問題ディレクトリが作られるようにする
+$ acc config default-task-choice all
+default-task-choice = all
+```
 
+```sh
+# config ディレクトリの場所を表示
+$ acc config-dir
+/Users/taigokuriyama/Library/Preferences/atcoder-cli-nodejs
+# テンプレート設定
+$ cd /Users/taigokuriyama/Library/Preferences/atcoder-cli-nodejs
+$ mkdir py
+$ cd py
+$ touch main.py template.json
+$ cat template.json 
+{
+  "task":{
+    "program": ["main.py"],
+    "submit": "main.py"
+  }
+}
+$ acc templates
+search template directories in /Users/taigokuriyama/Library/Preferences/atcoder-cli-nodejs
+NAME  SUBMIT-PROGRAM
+py    main.py
+```
 
 ## ディレクトリ作成
 ```sh
 # 
-$ acc new abc153
-? select tasks A Serval vs Monster
-[!] update available: 7.2.2 -> 9.0.0
-[*] run: $ pip3 install -U online-judge-tools
-[*] see: https://github.com/kmyk/online-judge-tools/blob/master/CHANGELOG.md
-[x] problem recognized: AtCoderProblem.from_url('https://atcoder.jp/contests/abc153/tasks/abc153_a'): https://atcoder.jp/contests/abc153/tasks/abc153_a
-[x] load cookie from: /Users/taigokuriyama/Library/Application Support/online-judge-tools/cookie.jar
-[x] GET: https://atcoder.jp/contests/abc153/tasks/abc153_a
-[x] 200 OK
-[x] save cookie to: /Users/taigokuriyama/Library/Application Support/online-judge-tools/cookie.jar
-
-[*] sample 0
-[x] input: sample-1
-10 4
-
-[+] saved to: tests/sample-1.in
-[x] output: sample-1
-3
-
-[+] saved to: tests/sample-1.out
-
-[*] sample 1
-[x] input: sample-2
-1 10000
-
-[+] saved to: tests/sample-2.in
-[x] output: sample-2
-1
-
-[+] saved to: tests/sample-2.out
-
-[*] sample 2
-[x] input: sample-3
-10000 1
-
-[+] saved to: tests/sample-3.in
-[x] output: sample-3
-10000
-
-$ tree abc153/
-abc153/
+$ acc new abc154 --template py
+$ tree abc154
+abc154
 ├── a
+│   ├── main.py
+│   └── tests
+│       ├── sample-1.in
+│       ├── sample-1.out
+│       ├── sample-2.in
+│       └── sample-2.out
+├── b
+│   ├── main.py
 │   └── tests
 │       ├── sample-1.in
 │       ├── sample-1.out
@@ -101,10 +98,45 @@ abc153/
 │       ├── sample-2.out
 │       ├── sample-3.in
 │       └── sample-3.out
-└── contest.acc.json
+├── c
+│   ├── main.py
+│   └── tests
+│       ├── sample-1.in
+│       ├── sample-1.out
+│       ├── sample-2.in
+│       ├── sample-2.out
+│       ├── sample-3.in
+│       └── sample-3.out
+├── contest.acc.json
+├── d
+│   ├── main.py
+│   └── tests
+│       ├── sample-1.in
+│       ├── sample-1.out
+│       ├── sample-2.in
+│       ├── sample-2.out
+│       ├── sample-3.in
+│       └── sample-3.out
+├── e
+│   ├── main.py
+│   └── tests
+│       ├── sample-1.in
+│       ├── sample-1.out
+│       ├── sample-2.in
+│       ├── sample-2.out
+│       ├── sample-3.in
+│       ├── sample-3.out
+│       ├── sample-4.in
+│       └── sample-4.out
+└── f
+    ├── main.py
+    └── tests
+        ├── sample-1.in
+        ├── sample-1.out
+        ├── sample-2.in
+        └── sample-2.out
 
-2 directories, 7 files
-
+12 directories, 41 files
 ```
 
 ## coding and testing
@@ -168,12 +200,7 @@ Are you sure? Please type "abca" abca
 [x] save cookie to: /Users/taigokuriyama/Library/Application Support/online-judge-tools/cookie.jar
 ```
 
-Settings
-```sh
-# 全部の問題ディレクトリが作られるようにする
-$ acc config default-task-choice all
-default-task-choice = all
-```
+
 ## Link
 - [AtCoder](https://atcoder.jp/)
 - [AtCoder Problems](https://kenkoooo.com/atcoder/#/table/taigok)
