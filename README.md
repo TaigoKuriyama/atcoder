@@ -58,6 +58,7 @@ default-task-choice = all
 # config ディレクトリの場所を表示
 $ acc config-dir
 /Users/taigokuriyama/Library/Preferences/atcoder-cli-nodejs
+
 # テンプレート設定
 $ cd /Users/taigokuriyama/Library/Preferences/atcoder-cli-nodejs
 $ mkdir py
@@ -78,7 +79,6 @@ py    main.py
 
 ## ディレクトリ作成
 ```sh
-# 
 $ acc new abc154 --template py
 $ tree abc154
 abc154
@@ -141,8 +141,6 @@ abc154
 
 ## coding and testing
 ```sh
-$ touch main.py
-$ vim main.py
 $ oj t -c "python3 a.py" -d ./tests/
 [*] 3 cases found
 time: illegal option -- f
@@ -168,34 +166,41 @@ usage: time [-lp] command.
 ## submit
 
 ```sh
-$ oj s https://atcoder.jp/contests/abc153/tasks/abc153_a main.py 
+$ acc sub
+Invalid command: sub
+Use `acc --help` for a list of available commands.
+TK2:b taigokuriyama$ acc s
+submit to: https://atcoder.jp/contests/abc153/tasks/abc153_b
 [x] read history from: /Users/taigokuriyama/Library/Caches/online-judge-tools/download-history.jsonl
 [x] found urls in history:
 
-[x] problem recognized: AtCoderProblem.from_url('https://atcoder.jp/contests/abc153/tasks/abc153_a'): https://atcoder.jp/contests/abc153/tasks/abc153_a
-[*] code (89 byte):
+[x] problem recognized: AtCoderProblem.from_url('https://atcoder.jp/contests/abc153/tasks/abc153_b'): https://atcoder.jp/contests/abc153/tasks/abc153_b
+[*] code (146 byte):
 #!/usr/bin/env python3
-import math
-H, A = map(int, input().split())
-print(math.ceil(H/A))
+H, N = map(int, input().split())
+A = list(map(int, input().split()))
+if H <= sum(A):
+    print("Yes")
+else:
+    print("No")
 [x] load cookie from: /Users/taigokuriyama/Library/Application Support/online-judge-tools/cookie.jar
-[x] GET: https://atcoder.jp/contests/abc153/tasks/abc153_a
+[x] GET: https://atcoder.jp/contests/abc153/tasks/abc153_b
 [x] 200 OK
 [x] PyPy is available for Python interpreter
 [x] both Python2 and Python3 are available for version of Python
 [x] use: 3
 [*] chosen language: 3023 (Python3 (3.4.3))
-[!] the problem "https://atcoder.jp/contests/abc153/tasks/abc153_a" is specified to submit, but no samples were downloaded in this directory. this may be mis-operation
+[!] the problem "https://atcoder.jp/contests/abc153/tasks/abc153_b" is specified to submit, but no samples were downloaded in this directory. this may be mis-operation
 [x] sleep(3.00)
-Are you sure? Please type "abca" abca
-[x] GET: https://atcoder.jp/contests/abc153/tasks/abc153_a
+Are you sure? Please type "abcb" abcb
+[x] GET: https://atcoder.jp/contests/abc153/tasks/abc153_b
 [x] 200 OK
 [x] GET: https://atcoder.jp/contests/abc153/submit
 [x] 200 OK
 [x] POST: https://atcoder.jp/contests/abc153/submit
 [x] redirected: https://atcoder.jp/contests/abc153/submissions/me
 [x] 200 OK
-[+] success: result: https://atcoder.jp/contests/abc153/submissions/10924026
+[+] success: result: https://atcoder.jp/contests/abc153/submissions/10941930
 [x] open the submission page with browser
 [x] save cookie to: /Users/taigokuriyama/Library/Application Support/online-judge-tools/cookie.jar
 ```
