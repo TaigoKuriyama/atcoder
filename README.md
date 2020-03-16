@@ -1,19 +1,17 @@
 # atcoder
 
-## Login
-
-Prepare
+## Prepare
 ```sh
 $ pip3 install online-judge-tools
 $ npm install -g atcoder-cli
 $ pip3 install selenium
 ```
-Update
+## Update
 ```sh
 $ pip3 install -U online-judge-tools
 ```
 
-Login
+## Login
 ```sh
 # Login to AtCoder by acc
 $ acc login
@@ -51,6 +49,7 @@ Password:
 ```
 
 
+## ディレクトリ作成
 ```sh
 # 
 $ acc new abc153
@@ -108,7 +107,7 @@ abc153/
 
 ```
 
-coding and testing
+## coding and testing
 ```sh
 $ touch main.py
 $ vim main.py
@@ -134,7 +133,8 @@ usage: time [-lp] command.
 [+] test success: 3 cases
 ```
 
-submit
+## submit
+
 ```sh
 $ oj s https://atcoder.jp/contests/abc153/tasks/abc153_a main.py 
 [x] read history from: /Users/taigokuriyama/Library/Caches/online-judge-tools/download-history.jsonl
