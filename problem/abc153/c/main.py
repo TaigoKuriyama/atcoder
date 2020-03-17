@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import sys
 N, K = map(int, input().split())
 H = sorted(list(map(int, input().split())), reverse=True)
 if K != 0:
