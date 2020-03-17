@@ -141,7 +141,7 @@ abc154
 
 ## coding and testing
 ```sh
-$ oj t -c "python3 a.py" -d ./tests/
+$ oj t -c "python3 main.py" -d ./tests/
 [*] 3 cases found
 time: illegal option -- f
 usage: time [-lp] command.
@@ -166,10 +166,7 @@ usage: time [-lp] command.
 ## submit
 
 ```sh
-$ acc sub
-Invalid command: sub
-Use `acc --help` for a list of available commands.
-TK2:b taigokuriyama$ acc s
+$ acc s main.py
 submit to: https://atcoder.jp/contests/abc153/tasks/abc153_b
 [x] read history from: /Users/taigokuriyama/Library/Caches/online-judge-tools/download-history.jsonl
 [x] found urls in history:
