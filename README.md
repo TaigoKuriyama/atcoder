@@ -41,6 +41,8 @@ $ cat template.json
     "submit": "main.py"
   }
 }
+# デフォルトのテンプレートの設定を py にする
+$ acc config default-template py
 $ acc templates
 search template directories in /Users/taigokuriyama/Library/Preferences/atcoder-cli-nodejs
 NAME  SUBMIT-PROGRAM
@@ -49,7 +51,7 @@ py    main.py
 
 ## ディレクトリ作成
 ```sh
-$ acc new abc154 --template py
+$ acc new abc154
 ```
 
 ## coding and testing
