@@ -27,3 +27,18 @@ for i in range(N):
     L.pop(0)
 print(sum(L))
 ```
+
+## リスト作成
+0 ~ N まで１ずつ増加するリスト
+
+```py
+l = list(range(n))
+```
+
+## リストを１行に表示する
+
+```py
+ans = [1, 2, 3, 4,5 ]
+print(' '.join(ans))
+>>> 1 2 3 4 5
+```
