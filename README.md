@@ -1,4 +1,4 @@
-# atcoder
+# AtCoder
 
 ## Prepare
 ```sh
@@ -6,6 +6,7 @@ $ pip3 install online-judge-tools
 $ npm install -g atcoder-cli
 $ pip3 install selenium
 ```
+
 ## Update
 ```sh
 $ pip3 install -U online-judge-tools
@@ -19,6 +20,7 @@ $ acc login
 # Login to AtCoder by oj
 $ oj login https://atcoder.jp/
 ```
+
 ## Settings
 ```sh
 # 全部の問題ディレクトリが作られるようにする
@@ -26,10 +28,10 @@ $ acc config default-task-choice all
 ```
 
 ```sh
-# config ディレクトリの場所を表示
+# display config directory
 $ acc config-dir
 
-# テンプレート設定
+# setting for template
 $ cd /Users/taigokuriyama/Library/Preferences/atcoder-cli-nodejs
 $ mkdir py
 $ cd py
@@ -41,7 +43,8 @@ $ cat template.json
     "submit": "main.py"
   }
 }
-# デフォルトのテンプレートの設定を py にする
+
+# make default template py
 $ acc config default-template py
 $ acc templates
 search template directories in /Users/taigokuriyama/Library/Preferences/atcoder-cli-nodejs
@@ -49,22 +52,20 @@ NAME  SUBMIT-PROGRAM
 py    main.py
 ```
 
-## ディレクトリ作成
+## create problem directory
 ```sh
 $ acc new abc154
 ```
 
-## coding and testing
+## testing
 ```sh
 $ oj t -c "python3 main.py" -d ./tests/
 ```
 
 ## submit
-
 ```sh
 $ acc s main.py
 ```
-
 
 ## Link
 - [AtCoder](https://atcoder.jp/)

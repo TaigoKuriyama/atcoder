@@ -48,3 +48,16 @@ print(sum(l))
 >>> print(' '.join(ans))
 1 2 3 4 5
 ```
+
+## 文字列を後ろから取り出す
+[147-b](https://atcoder.jp/contests/abc147/tasks/abc147_b)
+
+```py
+s = input() # ex."redcoder"
+ans = 0
+for i in range(len(s)//2):
+    if s[i] != s[-1-i]:
+        ans += 1
+print(ans)
+```
+- `s[-1]`：文字列の一番後ろの文字。よってここから -1 ずつしていけば後ろから取り出せる
