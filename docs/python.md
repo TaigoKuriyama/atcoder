@@ -61,3 +61,12 @@ for i in range(len(s)//2):
 print(ans)
 ```
 - `s[-1]`：文字列の一番後ろの文字。よってここから -1 ずつしていけば後ろから取り出せる
+
+## 文字列を逆順にする
+[159-b](https://atcoder.jp/contests/abc159/tasks/abc159_b)
+
+```py
+>>> a = 'abcdef'
+>>> a[::-1]
+'fedcba'
+```
