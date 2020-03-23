@@ -19,6 +19,7 @@ l = sorted([3, 1, 4, 5, 2], reverse=True)
 n = 3
 print(sum(l[n:]))
 ```
+
 以下はよくない
 ```py
 l = sorted([3, 1, 4, 5, 2], reverse=True)
@@ -82,3 +83,17 @@ print(ans)
 ```
 - 先頭のインデックスは`0`から
 - 終点のインデックスは含まない
+
+## 特定のインデックス以外のリストを取得
+
+```py
+>>> import numpy as np
+>>> v = np.arange(10)
+>>> v
+array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+>>> rm = [5, 7]
+>>> i = np.ones(10, dtype=bool)
+>>> i[rm] = False
+>>> v[i]
+array([0, 1, 2, 3, 4, 6, 8, 9])
+```
