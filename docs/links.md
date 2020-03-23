@@ -3,3 +3,4 @@
 - [1000000007 で割ったあまりの求め方を総特集！ 〜 逆元から離散対数まで 〜](https://qiita.com/drken/items/3b4fdf0a78e7a138cd9a)
 - [Python de アルゴリズム（bit全探索）](https://qiita.com/gogotealove/items/11f9e83218926211083a)
 - [Python3で競技プログラミングする時に知っておきたいtips（入力編）](https://qiita.com/kyuna/items/8ee8916c2f4e36321a1c)
+- [備忘録：pythonのelse時に何もしない場合の書き方をワンライナーで](https://qiita.com/nomurasan/items/b1a59a78ddb1b21f172a)
