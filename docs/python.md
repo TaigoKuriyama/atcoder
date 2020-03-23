@@ -19,13 +19,6 @@ l = sorted([3, 1, 4, 5, 2], reverse=True)
 n = 3
 print(sum(l[n:]))
 ```
-こっちでもいい
-
-```py
-l = [3, 1, 4, 5, 2][::-1]
-n = 3
-print(sum(l[n:]))
-```
 
 以下はよくない
 ```py
