@@ -8,6 +8,8 @@
 
 ## 幅優先探索(BFS：Breadth First Search)
 
+- 探索の始点となる頂点から、各頂点への最短経路を求めることのできるアルゴリズム
+
 ### 問題
 
 - [abc160 d](https://atcoder.jp/contests/abc160/tasks/abc160_d)
