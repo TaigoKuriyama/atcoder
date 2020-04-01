@@ -1,6 +1,8 @@
 ## sorted()
+
 - option 無しで昇順
 - `reverse=True` で降順
+
 ```py
 >>> org_list = [3, 1, 4, 5, 2]
 >>> new_list = sorted(org_list)
@@ -12,7 +14,8 @@
 ```
 
 ## リストの取り出し
-L = [3, 1, 4, 5, 2] のリストから、上から大きいN個をのぞいた数字の合計
+
+L = [3, 1, 4, 5, 2] のリストから、上から大きい N 個をのぞいた数字の合計
 
 ```py
 l = sorted([3, 1, 4, 5, 2], reverse=True)
@@ -21,6 +24,7 @@ print(sum(l[n:]))
 ```
 
 以下はよくない
+
 ```py
 l = sorted([3, 1, 4, 5, 2], reverse=True)
 n = 3
@@ -30,6 +34,7 @@ print(sum(l))
 ```
 
 ## リスト作成
+
 0 ~ N まで１ずつ増加するリスト
 
 ```py
@@ -51,6 +56,7 @@ print(sum(l))
 ```
 
 ## 文字列を後ろから取り出す
+
 [147-b](https://atcoder.jp/contests/abc147/tasks/abc147_b)
 
 ```py
@@ -61,9 +67,11 @@ for i in range(len(s)//2):
         ans += 1
 print(ans)
 ```
+
 - `s[-1]`：文字列の一番後ろの文字。よってここから -1 ずつしていけば後ろから取り出せる
 
 ## 文字列を逆順にする
+
 [159-b](https://atcoder.jp/contests/abc159/tasks/abc159_b)
 
 ```py
@@ -71,8 +79,8 @@ print(ans)
 >>> a[::-1]
 'fedcba'
 ```
-- `s[start:stop:step]`のステップに負数を指定することで`s`をリバースする
 
+- `s[start:stop:step]`のステップに負数を指定することで`s`をリバースする
 
 ## スライスのインデックス
 
@@ -81,6 +89,7 @@ print(ans)
 >>> s[2:5]
 'tho'
 ```
+
 - 先頭のインデックスは`0`から
 - 終点のインデックスは含まない
 
@@ -96,4 +105,16 @@ array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 >>> i[rm] = False
 >>> v[i]
 array([0, 1, 2, 3, 4, 6, 8, 9])
+```
+
+## プログラムを終了
+
+```py
+import sys
+sys.exit()
+```
+
+```py
+exit()
+quit()
 ```
