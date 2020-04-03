@@ -30,6 +30,24 @@
 []
 ```
 
+## アルファベット
+
+```py
+>>> ord("a")
+97
+>>> chr(ord(a))
+'a'
+>>> chr(ord(a)+1)
+'b'
+```
+
+- ord(s)
+  - 1 文字の Unicode 文字を表す文字列に対し、その文字の Unicode コードポイントを表す整数を返す
+  - https://docs.python.org/ja/3/library/functions.html#ord
+- chr(i)¶
+  - Unicode コードポイントが整数 i である文字を表す文字列を返す
+  - https://docs.python.org/ja/3/library/functions.html#chr
+
 ## sorted()
 
 - option 無しで昇順
