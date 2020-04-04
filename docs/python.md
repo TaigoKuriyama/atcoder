@@ -30,6 +30,31 @@
 []
 ```
 
+## set()
+
+```py
+# set型は重複しない要素（同じ値ではない要素、ユニークな要素）のコレクション
+>>> s = {1, 1, 2, 2, 3, 4, 5}
+>>> s
+set([1, 2, 3, 4, 5])
+>>> type(s)
+<type 'set'>
+
+# 空の場合は辞書
+>>> d = {}
+>>> type(d)
+<type 'dict'>
+
+# 要素の追加
+>>> s = {0, 1, 2}
+>>> s.add(3)
+>>> s
+set([0, 1, 2, 3])
+
+```
+
+- https://note.nkmk.me/python-set/
+
 ## アルファベット
 
 ```py
@@ -44,7 +69,7 @@
 - ord(s)
   - 1 文字の Unicode 文字を表す文字列に対し、その文字の Unicode コードポイントを表す整数を返す
   - https://docs.python.org/ja/3/library/functions.html#ord
-- chr(i)¶
+- chr(i)
   - Unicode コードポイントが整数 i である文字を表す文字列を返す
   - https://docs.python.org/ja/3/library/functions.html#chr
 
