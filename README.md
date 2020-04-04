@@ -1,6 +1,7 @@
 # AtCoder
 
 ## Prepare
+
 ```sh
 $ pip3 install online-judge-tools
 $ npm install -g atcoder-cli
@@ -8,11 +9,13 @@ $ pip3 install selenium
 ```
 
 ## Update
+
 ```sh
 $ pip3 install -U online-judge-tools
 ```
 
 ## Login
+
 ```sh
 # Login to AtCoder by acc
 $ acc login
@@ -22,6 +25,7 @@ $ oj login https://atcoder.jp/
 ```
 
 ## Settings
+
 ```sh
 # 全部の問題ディレクトリが作られるようにする
 $ acc config default-task-choice all
@@ -53,18 +57,24 @@ py    main.py
 ```
 
 ## create problem directory
+
 ```sh
 $ acc new abc154
 ```
 
 ## testing
+
 ```sh
-$ oj t -c "python3 main.py" -d ./tests/
+$ ls
+main.py	tests
+$ test
 ```
+alias setting：https://github.com/TaigoKuriyama/atcoder/issues/3 
 
 ## submit
+
 ```sh
-$ acc s main.py
+$ acc s
 ```
 
 ## Link
