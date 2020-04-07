@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import math
 x = int(input())
 n = 10 ** 10
 for i in range(x, n):
