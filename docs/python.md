@@ -204,18 +204,18 @@ quit()
 `math` は　AtCoder の Python のバージョンの関係上使用できないので、`fractions`を使う
 
 ```py
-import fractions
-a, b = map(int, input().split())
-ans = fractions.gcd(a, b)
-print(ans)
+>>> import fractions
+>>> ans = fractions.gcd(123, 456)
+>>> ans
+3
 ```
 
 ## 最小公倍数
 
 ```py
-import fractions
-a, b = map(int, input().split())
-f = fractions.gcd(a, b)
-ans = a * b // f
-print(ans)
+>>> import fractions
+>>> f = fractions.gcd(123, 456)
+>>> ans = (123 * 456) // f
+>>> ans
+18696
 ```
