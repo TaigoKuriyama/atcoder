@@ -219,3 +219,13 @@ quit()
 >>> ans
 18696
 ```
+
+## 文字列はイミュータブル
+
+```py
+>>> s = "abc"
+>>> s[1] = "b"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+```
