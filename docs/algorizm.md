@@ -19,3 +19,12 @@
 
 - [BFS (幅優先探索) 超入門！ 〜 キューを鮮やかに使いこなす 〜](https://qiita.com/drken/items/996d80bcae64649a6580)
 
+## ユークリッドの互除法
+
+### 問題
+
+- [abc162 c](https://atcoder.jp/contests/abc162/tasks/abc162_c)
+
+### 参考
+
+- [AtCoder 版！マスター・オブ・整数 (最大公約数編)](https://qiita.com/drken/items/0c88a37eec520f82b788)
