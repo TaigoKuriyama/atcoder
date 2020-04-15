@@ -231,3 +231,35 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'str' object does not support item assignment
 ```
+
+## 入力
+
+```py
+>>> l = [int(input()) for i in range(5)]
+1
+2
+3
+4
+5
+>>> l
+[1, 2, 3, 4, 5]
+```
+
+```py
+>>> a, b, c, d, e = [int(input()) for i in range(5)]
+1
+2
+3
+4
+5
+>>> a
+1
+>>> b
+2
+>>> c
+3
+>>> d
+4
+>>> e
+5
+```
