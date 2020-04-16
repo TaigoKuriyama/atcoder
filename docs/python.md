@@ -282,3 +282,14 @@ TypeError: 'str' object does not support item assignment
 >>> e
 5
 ```
+
+## 切り上げまでの数
+
+- 例えば、28 を 30 にするのに必要な数は 2
+
+```
+>>> l = [101, 86, 119, 108]
+>>> ans = [-(-a // 10) * 10 - a for a in l]
+>>> ans
+[9, 4, 1, 2]
+```
