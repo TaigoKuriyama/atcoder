@@ -293,3 +293,37 @@ TypeError: 'str' object does not support item assignment
 >>> ans
 [9, 4, 1, 2]
 ```
+
+## 数え上げ
+
+- counter が早い(はず)
+  - 下記は pypy でも可
+
+- [abc163 c](https://atcoder.jp/contests/abc163/tasks/abc163_c)
+
+```py
+# 2206 ms
+n = int(input()) 
+l = list(map(int, input().split()))
+for i in range(1, n+1):
+    print(l.count(i))
+```
+
+```py
+# 200 ms
+import collections
+n = int(input()) 
+l = sorted(list(map(int, input().split())))
+c = collections.Counter(l)
+[print(c[i]) for i in range(1, n+1)]
+```
+
+```py
+# 206 ms
+import collections
+n = int(input()) 
+l = list(map(int, input().split()))
+c = collections.Counter()
+c.update(l)
+[print(c[i]) for i in range(1, n+1)]
+```
