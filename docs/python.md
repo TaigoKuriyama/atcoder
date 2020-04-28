@@ -1,5 +1,14 @@
 # python
 
+## キャスト
+
+```py
+>>> int(1.01)
+1
+>>> float(1.01)
+1.01
+```
+
 ## 四則演算
 
 - 割り算
@@ -281,6 +290,24 @@ TypeError: 'str' object does not support item assignment
 4
 >>> e
 5
+```
+
+一行で文字列と数値の入力をする場合は、とりあえず両方とも string で受け取って、 `float()` で変換する。
+
+```py
+>>> input().split()
+1000 JPY
+['1000', 'JPY']
+>>> x, s = input().split()
+1000 JPY
+>>> xs, s = input().split()
+1000 JPY
+>>> x = float(xs)
+>>> x
+1000.0
+>>> type(x)
+<class 'float'>
+
 ```
 
 ## 切り上げまでの数
