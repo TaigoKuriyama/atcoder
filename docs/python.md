@@ -2,7 +2,6 @@
 
 ## タプル
 
-
 ```py
 >>> t = (0, 1, 2)
 >>> t
@@ -252,7 +251,7 @@ quit()
 
 ## 最大公約数
 
-`math` は　AtCoder の Python のバージョンの関係上使用できないので、`fractions`を使う
+`math` は　 AtCoder の Python のバージョンの関係上使用できないので、`fractions`を使う
 
 ```py
 >>> import fractions
@@ -345,13 +344,14 @@ TypeError: 'str' object does not support item assignment
 ## 数え上げ
 
 - counter が早い(はず)
+
   - 下記は pypy でも可
 
 - [abc163 c](https://atcoder.jp/contests/abc163/tasks/abc163_c)
 
 ```py
 # 2206 ms
-n = int(input()) 
+n = int(input())
 l = list(map(int, input().split()))
 for i in range(1, n+1):
     print(l.count(i))
@@ -360,7 +360,7 @@ for i in range(1, n+1):
 ```py
 # 200 ms
 import collections
-n = int(input()) 
+n = int(input())
 l = sorted(list(map(int, input().split())))
 c = collections.Counter(l)
 [print(c[i]) for i in range(1, n+1)]
@@ -369,7 +369,7 @@ c = collections.Counter(l)
 ```py
 # 206 ms
 import collections
-n = int(input()) 
+n = int(input())
 l = list(map(int, input().split()))
 c = collections.Counter()
 c.update(l)
