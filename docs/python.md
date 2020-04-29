@@ -50,6 +50,14 @@ TypeError: 'tuple' object does not support item assignment
 1
 ```
 
+- 余り
+  - `%`
+
+```py
+>>> 10 % 3
+1
+```
+
 ## リスト基礎
 
 - range(1, 10) の場合、1 ~ 9 までの繰り返し
