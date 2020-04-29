@@ -1,5 +1,26 @@
 # python
 
+## タプル
+
+
+```py
+>>> t = (0, 1, 2)
+>>> t
+(0, 1, 2)
+>>> type(t)
+<class 'tuple'>
+>>> t[0]
+0
+>>> t[2]
+2
+>>> t[0] = 100
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> t + (3, 4, 5)
+(0, 1, 2, 3, 4, 5)
+```
+
 ## キャスト
 
 ```py
