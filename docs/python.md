@@ -2,6 +2,8 @@
 
 ## タプル
 
+変更不可なシーケンス
+
 ```py
 >>> t = (0, 1, 2)
 >>> t
@@ -44,6 +46,14 @@ TypeError: 'tuple' object does not support item assignment
 3
 >>> -10 // 3
 -4
+>>> 10 % 3
+1
+```
+
+- 余り
+  - `%`
+
+```py
 >>> 10 % 3
 1
 ```
