@@ -389,3 +389,13 @@ c = collections.Counter()
 c.update(l)
 [print(c[i]) for i in range(1, n+1)]
 ```
+
+## 組み合わせ
+
+- 重複あり
+
+```sh
+>>> import itertools
+>>> list(itertools.combinations_with_replacement('ABCD', 2))
+[('A', 'A'), ('A', 'B'), ('A', 'C'), ('A', 'D'), ('B', 'B'), ('B', 'C'), ('B', 'D'), ('C', 'C'), ('C', 'D'), ('D', 'D')]
+```
