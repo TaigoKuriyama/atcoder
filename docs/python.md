@@ -393,7 +393,8 @@ c.update(l)
 ## 組み合わせ
 
 - 重複あり
-
+   - [abc165_c](https://atcoder.jp/contests/abc165/tasks/abc165_c)
+   
 ```py
 >>> import itertools
 >>> list(itertools.combinations_with_replacement('ABCD', 2))
