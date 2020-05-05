@@ -400,3 +400,19 @@ c.update(l)
 >>> list(itertools.combinations_with_replacement('ABCD', 2))
 [('A', 'A'), ('A', 'B'), ('A', 'C'), ('A', 'D'), ('B', 'B'), ('B', 'C'), ('B', 'D'), ('C', 'C'), ('C', 'D'), ('D', 'D')]
 ```
+
+## 約数
+
+- 計算量 O(N√O(N))
+   - 参考：https://qiita.com/LorseKudos/items/9eb560494862c8b4eb56
+
+```py
+def divisors(n):
+    div = []
+    for i in range(1, int(n ** 0.5) + 1):
+        if n % i == 0:
+            div.append(i)
+            if i != n // i:
+                div.append(n//i)
+    return div
+```
