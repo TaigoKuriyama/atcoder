@@ -432,6 +432,11 @@ def divisors(n):
 >>> c
 >>> type(c)
 <class 'NoneType'>
+```
+
+## all()
+
+```
 >>> l = [0, 1, 2, 3, 4]
 >>> all([i > 2 for i in l])
 False
