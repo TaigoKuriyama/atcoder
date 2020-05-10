@@ -436,7 +436,7 @@ def divisors(n):
 
 ## all()
 
-```
+```py
 >>> l = [0, 1, 2, 3, 4]
 >>> all([i > 2 for i in l])
 False
