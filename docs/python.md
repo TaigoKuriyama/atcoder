@@ -421,7 +421,7 @@ def divisors(n):
 
 - リストの末尾に別のリストやタプルを結合する
 
-```sh
+```py
 >>> a = [1, 2]
 >>> b = [3, 4]
 >>> a.extend(b)
@@ -432,4 +432,9 @@ def divisors(n):
 >>> c
 >>> type(c)
 <class 'NoneType'>
+>>> l = [0, 1, 2, 3, 4]
+>>> all([i > 2 for i in l])
+False
+>>> all([i >= 0 for i in l])
+True
 ```
