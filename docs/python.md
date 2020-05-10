@@ -416,3 +416,20 @@ def divisors(n):
                 div.append(n//i)
     return div
 ```
+
+## リストとリストの結合
+
+- リストの末尾に別のリストやタプルを結合する
+
+```sh
+>>> a = [1, 2]
+>>> b = [3, 4]
+>>> a.extend(b)
+>>> a
+[1, 2, 3, 4]
+# よく勘違いしてしまうがこういう書き方ではない
+>>> c = a.extend(b)
+>>> c
+>>> type(c)
+<class 'NoneType'>
+```
