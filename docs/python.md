@@ -344,6 +344,15 @@ TypeError: 'str' object does not support item assignment
 
 ```
 
+```py
+>>> c, *a_list = map(int, input().split())
+1 1 2 3 4 5
+>>> c
+1
+>>> a_list
+[1, 2, 3, 4, 5]
+```
+
 ## 切り上げまでの数
 
 - 例えば、28 を 30 にするのに必要な数は 2
