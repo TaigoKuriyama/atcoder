@@ -14,6 +14,7 @@
 
 - [abc007 3](https://atcoder.jp/contests/abc007/tasks/abc007_3)
 - [abc160 d](https://atcoder.jp/contests/abc160/tasks/abc160_d)
+- [abc168 d](https://atcoder.jp/contests/abc168/tasks/abc168_d)
 
 ### 参考
 
