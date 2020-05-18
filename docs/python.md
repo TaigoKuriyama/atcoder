@@ -473,3 +473,14 @@ True
 >>> (list(itertools.product([0, 1], repeat=3)))
 [(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1)]
 ```
+
+## 三角関数
+
+- mathモジュールの三角関数はラジアンを使うので、`ath.radians`で角度からラジアンに変換する
+
+```py
+>>> import math
+>>> ang = 0
+>>> math.cos(math.radians(ang))
+1.0
+```
