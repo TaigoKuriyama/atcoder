@@ -494,3 +494,11 @@ True
 [[], [], [], [], [], []]
 ```
 ## decimal
+
+## bit演算
+
+- [abc167](https://atcoder.jp/contests/abc167/tasks/abc167_c
+
+```sh
+if (i>>j)&1:
+```
