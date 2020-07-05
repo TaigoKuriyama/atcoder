@@ -497,7 +497,8 @@ True
 
 ## bit演算
 
-- [abc167](https://atcoder.jp/contests/abc167/tasks/abc167_c)
+- [abc167 c](https://atcoder.jp/contests/abc167/tasks/abc167_c)
+- [abc173 c](https://atcoder.jp/contests/abc173/tasks/abc173_c)
 
 ```sh
 >>> x = 9 
