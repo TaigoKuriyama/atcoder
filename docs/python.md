@@ -497,8 +497,20 @@ True
 
 ## bit演算
 
-- [abc167](https://atcoder.jp/contests/abc167/tasks/abc167_c
+- [abc167](https://atcoder.jp/contests/abc167/tasks/abc167_c)
 
 ```sh
-if (i>>j)&1:
+>>> x = 9 
+>>> bin(x)
+'0b1001'
+>>> x << 1
+18
+>>> bin(x << 1)
+'0b10010'
+>>> x >> 1
+4
+>>> bin(x >> 1)
+'0b100'
 ```
+
+
